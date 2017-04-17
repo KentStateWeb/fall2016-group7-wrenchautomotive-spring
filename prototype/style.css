@@ -13,54 +13,49 @@ div, section, main, aside, header, footer {
   margin-bottom: 1em;
 }
 
-header ul {
-font-family: 'Arvo', serif;
-color: #942B20;
-list-style: none;
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-max-width: 75%
-margin: 0 auto;
-padding-left: 0px;
+header{
+  text-align: left;
 }
-
-footer ul {
-font-family: 'Arvo', serif;
-color: #942B20;
-padding: 10px;
-line-height: 175%;
-list-style: none;
-max-width: 75%
-margin: 0 auto;
-}
-
-footer p {
-  font-family: 'Open Sans', sans-serif;
-}
-footer {
-  background-color: #E6E7E8;
-  justify-content: space-around;
-}
-footer dl {
-  display: flex;
-  justify-content: space-around;
-}
-
-header p {
-  text-align: center;
-}
-
-header {
-  text-align: center;
-}
-
-
 header img {
-    width: 400px;
-    max-width: 100%;
-    padding: 20px;
-  }
+  width: 250px;
+  max-width: 100%;
+  float: left;
+  padding-top: 50px;
+  margin-bottom: 20px;
+
+}
+.header .appointment, header h2 {
+  display: inline;
+  justify-content: space-between;
+}
+.header .appointment{
+text-align: right;
+}
+
+header h2  {
+position: fixed;
+text-align: left;
+float: left;
+letter-spacing: .05em;
+font-size: 20px;
+background-color: #E6E7E8;
+width: 100%;
+padding: 15px;
+margin-top: 0px;
+
+}
+
+
+header ul {
+
+  font-family: 'Arvo', serif;
+  color: #942B20;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 90px;
+}
 
 
 
