@@ -21,6 +21,7 @@ header ul a:visited {
 }
 header ul a:link {
   text-decoration: none;
+  color: #942B20;
 }
 header ul a:active {
   color: #BF8079;
@@ -28,8 +29,11 @@ header ul a:active {
 }
 header ul a:hover {
   text-decoration: underline;
+  color: #942B20;
 }
-
+.arvo {
+  font-family: 'Arvo', serif;
+}
 /*top image*/
 
 
@@ -599,6 +603,9 @@ font-size: 300%;
   letter-spacing: .5px;
   text-shadow: 2px 2px 2px black;
 }
+
+
+
 nav[role=navigation] {
             clear: both;
             -webkit-transition: all 0.3s ease-out;
