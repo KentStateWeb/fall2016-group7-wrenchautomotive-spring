@@ -9,35 +9,48 @@
   </head>
   <body>
     <header>
-    <div class="upperheader">
-      <img src="https://github.com/KentStateWeb/fall2016-group7-wrenchautomotive-spring/blob/master/images/wrench.jpg?raw=true" alt='Wrench's Auto Logo/>
 
-      <p> Located in Downtown Kent, Ohio </p>
-    </div>
-
-
-
-    <div class="menubutton">
-      <a href="#menu" class="menu-link">Menu</a>
-    </div>
+    <section class="smallscreennav">
+      <div class="upperheader">
+        <img src="https://github.com/KentStateWeb/fall2016-group7-wrenchautomotive-spring/blob/master/images/wrench.jpg?raw=true" alt='Wrench's Auto Logo/>
+      </div>
 
 
-    <nav id="menu" role="navigation">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="scheduleappointment.html">Schedule Appointment</a></li>
-                    <li><a href="testimonials.html">About Us</a></li>
-                </ul>
-    </nav>
+      <a href="#menu" class="menu-link">
+          <div class="menu-link__hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+      </a>
+    </section>
 
-    </header>
+
+      <nav id="menu" role="navigation">
+                  <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="services.html">Services</a></li>
+                      <li><a href="scheduleappointment.html">Schedule Appointment</a></li>
+                      <li><a href="#">About Us</a></li>
+                  </ul>
+      </nav>
+      </header>
+
 
 
 <main>
 
-  <img src="services.jpg" alt="Automotive technician servicing a car.">
 
+  <section class="service-image">
+      <div class="service__container"> <!-- If anyone has a more semantic way to do this, let me know -->
+          <div class="service__text">
+              <h1>Automotive Service</h1>
+              <p>Kent's most trusted car and automotive repair and maintenance since 1997.</p>
+          </div>
+      </div>
+  </section>
+
+<div class="servicebodycopy">
   <p> Since 1997 our ASE Certified, factory trained technicians have been
     serving customers just like you. With over 45 years of combined experience
     our NAPA Auto Care Center knows what you need. We specializing in Jasper
@@ -47,102 +60,119 @@
     <p> Wrench is all about fast, effective repairs and top notch customer
       service. That’s why our customers have come to rely on Wrench for all
       their automotive repairs. </p>
+</div>
 
 
       <ul class="accordion">
       <li>
-      <label for="first">Our Full Services</label>
+      <label for="first"><img src="noun_737773_cc.svg" class="serviceicon" alt="repair icon"><span class="servicelabel">Our Full Services </span></label>
       <input type="radio" name="accordion" id="first">
       <div class="content">
-        <ul>
-          <li> Computer Diagnostics </li>
-        <li> Diesel Service </li>
-        <li>  Fleet Service </li>
-        <li> Gas Service </li>
-        <li> Smog/Emissions </li>
-        <li> Tire Sales and Service </li>
-        <li> Transmission Service
-        <li> Air Filter Replacement </li>
-        <li> Axle Replacement </li>
-        <li> Battery Replacement </li>
-        <li> Belts and Hoses </li>
-        <li> Brake Systems </li>
-        <li> Clutch Repair </li>
-        <li> Exhaust System </li>
-        <li> Light Replacement </li>
-        <li> Oil Change </li>
-        <li> Power Steering </li>
-        <li> Preventative Maintenance </li>
-        <li> Radiator Service </li>
-        <li> Suspension and Steering Work </li>
-        <li> Wheel Alignment </li>
-        <li> Engine repair and replacement </li>
-        <li> Automatic Trans/Transaxle </li>
-        <li> Manual Drive Train </li>
-        <li> Electrical/Electronic Systems </li>
-        <li> Heating and Air Conditioning </li>
-        <li> Engine Performance </li>
-        </ul>
+
+        <section class="servicecolumns">
+                <!-- This is the "first" column.  It could be anything, not just div -->
+            <div class="service">
+              <ul>
+              <li> Computer Diagnostics </li>
+            <li> Diesel Service </li>
+            <li>  Fleet Service </li>
+            <li> Gas Service </li>
+            <li> Smog/Emissions </li>
+            <li> Tire Sales and Service </li>
+            <li> Transmission Service
+            <li> Air Filter Replacement </li>
+            <li> Axle Replacement </li>
+            <li> Battery Replacement </li>
+            <li> Belts and Hoses </li>
+            <li> Brake Systems </li>
+            <li> Clutch Repair </li>
+            <li> Exhaust System </li>
+            <li> Light Replacement </li>
+          </ul>
+            </div>
+            <!-- This is the "second" column.  It could be anything, not just div -->
+            <div class="service">
+              <ul>
+              <li> Oil Change </li>
+              <li> Power Steering </li>
+              <li> Preventative Maintenance </li>
+              <li> Radiator Service </li>
+              <li> Suspension and Steering Work </li>
+              <li> Wheel Alignment </li>
+              <li> Engine repair and replacement </li>
+              <li> Automatic Trans/Transaxle </li>
+              <li> Manual Drive Train </li>
+              <li> Electrical/Electronic Systems </li>
+              <li> Heating and Air Conditioning </li>
+              <li> Engine Performance </li>
+              </ul>
+            </div>
+
+        </section>
+
       </div>
       </li>
+
       <li>
-      <label for="second">Oil and Oil Filter Service</label>
+  <label for="second"><img src="noun_165699_cc.svg" class="serviceicon" alt="oil change icon"><span class="servicelabel">Oil and Oil Filter Service</span></label>
       <input type="radio" name="accordion" id="second">
       <div class="content">
-        <p>Experts recommend changing the oil and oil filter in your vehicle every 3 months or 3,000 miles, whichever is first. It’s an essential way to maximize engine protection.</p>
+      <p>Experts recommend changing the oil and oil filter in your vehicle every 3 months or 3,000 miles, whichever is first. It’s an essential way to maximize engine protection.</p>
 
-                <h3> Engine Oil </h3>
-                  <p> Engine oil is what lubricates a car’s engine, allowing it to run
-                    smoothly and last longer. Car owners must maintain their cars’
-                    engines by changing the oil and using the oil appropriate for their
-                    cars’ makes and models. Every car comes with a check oil light and
-                    an oil filter under the hood. These components allow car owners to
-                    monitor their oil levels and add oil as needed without having to
-                    hire a mechanic. </p>
-                        <blockquote>
-                        <h3> Tips and Advice </h3>
-                        <p> What causes milky brown engine oil? </p>
-                        <p> Milky brown engine oil is an indication of coolant in the oil.
-                          This can be caused by a blown head gasket or other gasket, a
-                          failed transmission cooler or cracked casings. This condition
-                          is very serious and needs to be checked by a professional
-                          technician quickly. </p>
-                          <p> What is synthetic motor oil? </p>
-             <p> Synthetic motor oils are made of artificial materials. They can be a
-               good choice for high output, turbocharged or supercharged engines, vehicles
-                that are used for towing (especially during hot weather) or vehicles that
-                are operated in extremely cold or hot climates. Synthetic motor oils,
-                though several times more expensive than mineral-based motor oils, can
-                improve fuel economy and provide longer intervals between changes. They
-                also provide instant lubrication on start-up. </p>
-           </blockquote>
+              <h3> Engine Oil </h3>
+                <p> Engine oil is what lubricates a car’s engine, allowing it to run
+                  smoothly and last longer. Car owners must maintain their cars’
+                  engines by changing the oil and using the oil appropriate for their
+                  cars’ makes and models. Every car comes with a check oil light and
+                  an oil filter under the hood. These components allow car owners to
+                  monitor their oil levels and add oil as needed without having to
+                  hire a mechanic. </p>
 
-           <h3> Changing the Oil </h3>
-           <p> An important part of routine car maintenance is changing the oil regularly.
-              The necessary frequency of oil changes has become a point of contention among
-              experts. To determine the best course oil maintenance on oil change is to
-              check the owner’s manual and follow the manufacturer’s recommendations. </p>
-
-              <p> If the check engine oil light comes on when you’re driving, this is a
-                strong indication that the car is running low on oil. If the oil light
-                stays on or lights up shortly after adding oil, there may be a leak, and a
-                mechanic should look at the car. </p>
-
-           <blockquote>
-             <h3> Tips and Advice </h3>
-             <p> When should I get my oil changed? </p>
-             <p> You should get your oil changed every 3,000 miles or as recommended in
-               your vehicle’s owner’s manual. If intervals are extended, ensure you use
-               oil that is capable of extended mileage changes. </p>
+                          <blockquote>
+                          <h3> Tips and Advice </h3>
+                          <p> What causes milky brown engine oil? </p>
+                          <p> Milky brown engine oil is an indication of coolant in the oil.
+                            This can be caused by a blown head gasket or other gasket, a
+                            failed transmission cooler or cracked casings. This condition
+                            is very serious and needs to be checked by a professional
+                            technician quickly. </p>
+                            <p> What is synthetic motor oil? </p>
+               <p> Synthetic motor oils are made of artificial materials. They can be a
+                 good choice for high output, turbocharged or supercharged engines, vehicles
+                  that are used for towing (especially during hot weather) or vehicles that
+                  are operated in extremely cold or hot climates. Synthetic motor oils,
+                  though several times more expensive than mineral-based motor oils, can
+                  improve fuel economy and provide longer intervals between changes. They
+                  also provide instant lubrication on start-up. </p>
              </blockquote>
-             <div class="servicesschedulebutton">
-             <h3> <a href="scheduleappointment.html"> Schedule an Appointment!</a> </h3>
-             </div>
+
+         <h3> Changing the Oil </h3>
+         <p> An important part of routine car maintenance is changing the oil regularly.
+            The necessary frequency of oil changes has become a point of contention among
+            experts. To determine the best course oil maintenance on oil change is to
+            check the owner’s manual and follow the manufacturer’s recommendations. </p>
+
+            <p> If the check engine oil light comes on when you’re driving, this is a
+              strong indication that the car is running low on oil. If the oil light
+              stays on or lights up shortly after adding oil, there may be a leak, and a
+              mechanic should look at the car. </p>
+
+         <blockquote>
+           <h3> Tips and Advice </h3>
+           <p> When should I get my oil changed? </p>
+           <p> You should get your oil changed every 3,000 miles or as recommended in
+             your vehicle’s owner’s manual. If intervals are extended, ensure you use
+             oil that is capable of extended mileage changes. </p>
+           </blockquote>
+             <a href="scheduleappointment.html" class="servicebutton">Schedule an appointment</a>
            </section>
       </div>
       </li>
+
+
+
       <li>
-      <label for="third">Cooling System Services</label>
+      <label for="third"><img src="noun_763491_cc.svg" class="serviceicon" alt="cooling system icon"><span class="servicelabel">Cooling System Services </span></label>
       <input type="radio" name="accordion" id="third">
       <div class="content">
         <p> We can flush your vehicle’s cooling system, perform a pressure test
@@ -150,27 +180,23 @@
 
           <h3> Air Conditioning Service </h3>
           <p> One of our trained air conditioning specialists will inspect your car’s air conditioner, all lines, the evaporator and the compressor for leaks and wear. </p>
-          <div class="servicesschedulebutton">
-          <h3> <a href="scheduleappointment.html"> Schedule an Appointment!</a> </h3>
-          </div>
+         <a href="scheduleappointment.html" class="servicebutton">Schedule an appointment</a>
         </section>
       </div>
       </li>
       <li>
-      <label for="fourth">Driveline Service</label>
+      <label for="fourth"><img src="noun_737773_cc.svg" class="serviceicon" alt="repair icon"><span class="servicelabel">Driveline Service </span></label>
       <input type="radio" name="accordion" id="fourth">
       <div class="content">
         <h3> Driveline Service </h3>
         <p> We will remove old, worn-out gear oil from the front and
               rear differential and transfer cases. </p>
-              <div class="servicesschedulebutton">
-              <h3> <a href="scheduleappointment.html"> Schedule an Appointment!</a> </h3>
-              </div>
+               <a href="scheduleappointment.html" class="servicebutton">Schedule an appointment</a>
             </section>
       </div>
       </li>
       <li>
-      <label for="fifth">Fuel/Air Induction Clean-Up</label>
+      <label for="fifth"><img src="noun_737773_cc.svg" class="serviceicon" alt="repair icon"><span class="servicelabel">Fuel/Air Induction Clean-Up </span></label>
       <input type="radio" name="accordion" id="fifth">
       <div class="content">
         <h3> Fuel/Air Induction Clean-up </h3>
@@ -179,42 +205,37 @@
                 combustion chamber and install injector cleaning additives in your
                 vehicle’s tank. This service will restore lost power and performance
                 and will reduce harmful exhaust emissions. </p>
-                <div class="servicesschedulebutton">
-                <h3> <a href="scheduleappointment.html"> Schedule an Appointment!</a> </h3>
+                 <a href="scheduleappointment.html" class="servicebutton">Schedule an appointment</a>
                 </div>
               </section>
       </div>
       </li>
 
       <li>
-      <label for="sixth">Power Steering Flush</label>
+      <label for="sixth"><img src="noun_989790_cc.svg" class="serviceicon" alt="steering wheel icon"><span class="servicelabel"> Power Steering Flush </span> </label>
       <input type="radio" name="accordion" id="sixth">
       <div class="content">
         <h3> Power Steering Flush </h3>
         <p> Our technicians use a powerful cleaner to dissolve gum and varnish in your car’s power steering unit. Next, we will flush old, worn-out,contaminated fluid and install fresh, new fluid fortified with a special antioxidant and anti-wear ingredients to prevent expensive mechanical failure. </p>
-        <div class="servicesschedulebutton">
-        <h3> <a href="scheduleappointment.html"> Schedule an Appointment!</a> </h3>
-        </div>
+        <a href="scheduleappointment.html" class="servicebutton">Schedule an appointment</a>
       </section>
       </div>
       </li>
 
       <li>
-      <label for="seventh">Transmission Service</label>
+      <label for="seventh"><img src="noun_900557_cc.svg" class="serviceicon" alt="transmission service icon"><span class="servicelabel">Transmission Service </span></label>
       <input type="radio" name="accordion" id="seventh">
       <div class="content">
         <h3> Transmission Service </h3>
         <p> Using the latest in state-of-the-art technology, we will install
             a safe and effective cleaner to suspend harmful varnish and sludge from the transmission valve body, torque converter and lines and install new high-tech fluid with conditioners. </p>
-            <div class="servicesschedulebutton">
-            <h3> <a href="scheduleappointment.html"> Schedule an Appointment!</a> </h3>
-            </div>
+            <a href="scheduleappointment.html" class="servicebutton">Schedule an appointment</a>
           </section>
       </div>
       </li>
 
       <li>
-      <label for="eighth">Brake System Services</label>
+      <label for="eighth"><img src="noun_7347_cc.svg" class="serviceicon" alt="braking system icon"><span class="servicelabel">Brake System Services </span> </label>
       <input type="radio" name="accordion" id="eighth">
       <div class="content">
         <h3> Brake System Services </h3>
@@ -266,15 +287,14 @@
              be at least ¼ inch of pad. Any less, and you’ll want to have the pads
              inspected or replaced. </p>
            </blockquote>
-           <div class="servicesschedulebutton">
-           <h3> <a href="scheduleappointment.html"> Schedule an Appointment!</a> </h3>
-           </div>
+            <a href="scheduleappointment.html" class="servicebutton">Schedule an appointment</a>
          </section>
       </div>
       </li>
 
       <li>
-      <label for="ninth">Tire Service</label>
+      <label for="ninth"> <img src="noun_56888_cc.svg" class="serviceicon" alt="tire">
+<span class="servicelabel">Tire Service</span> </label>
       <input type="radio" name="accordion" id="ninth">
       <div class="content">
         <h3> Tire Service </h3>
@@ -315,9 +335,7 @@
         <p> Your tires should be rotated every other oil change or every 6,000 miles.
            Neglecting to rotate tires is a major cause of premature tire wear. </p>
      </blockquote>
-     <div class="servicesschedulebutton">
-     <h3> <a href="scheduleappointment.html"> Schedule an Appointment!</a> </h3>
-     </div>
+      <a href="scheduleappointment.html" class="servicebutton">Schedule an appointment</a>
    </section>
       </div>
       </li>
@@ -325,56 +343,25 @@
 
 
 
-<!--
-
-
-
-
-
-      <li>
-      <label for="seventh">Tire Service</label>
-      <input type="radio" name="accordion" id="seventh">
-      <div class="content">
-
-      </div>
-      </li>
-
-
-      </ul>
-
 
 
 </main>
 
 <footer>
-  <div class="scheduleappointment">
-    <h2> <a href="scheduleappointment.html"> Schedule Appointment </a> </h2>
-  </div>
 
-    <ul>
-    <li> <a href="index.html"> Home </a> </li>
-    <li> <a href="services.html"> Services </a> </li>
-    <li> <a href="testimonials.html">  Promos </a> </li>
-     <li> <a href="testimonials.html"> Contact Us </a> </li>
-   </ul>
+  <a href="" class="call"> Call Us!   330-672-3031</a>
+          <a href="scheduleappointment.html" class="appointmentbutton">Schedule Appointment</a>
+        <a href="services.html" class="servicesbutton">Our Services</a>
 
-
-<h3>Located in Kent, Ohio</h3>
-<p> Wrench Automotive is conveniently located in Kent, Ohio, just off of State Route 43.</p>
-<p> 13468 E. Main Street <br>
-Kent, OH 44240 </p>
-<p> 330-672-3031 </p>
-<p> Monday - Friday <br>  8:00-5:00 </p>
-
+  <span class="copyright"><p>© 2017 Wrench Automotive. All Rights Reserved. </p> </span>
 
 </footer>
--->
+
 
   </body>
-  <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-  <script src="navigation.js"></script>
+  <link href="stylea.css" rel="stylesheet" type="text/css" media="screen" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="jquerya.js"></script>
   <script src="https://npmcdn.com/flickity@1.2/dist/flickity.pkgd.min.js"></script><link rel="stylesheet" href="https://npmcdn.com/flickity@1.2/dist/flickity.min.css">
-
 
 </html>

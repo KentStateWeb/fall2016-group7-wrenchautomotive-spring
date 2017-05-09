@@ -29,45 +29,7 @@ header p {
   margin-top: 0px;
 }
 
-.accordion {
-    margin:0 auto;
-    padding:0;
-    width: 90%
-}
 
-.accordion li {
-    list-style:none;
-    width:100%;
-    }
-
-.accordion li label {
-    padding:10px;
-    display:block;
-    background-color:black;
-    color: white;
-    cursor: pointer;
-    border: 1px solid white;
-    }
-
-/* Hide the radio buttons */
-.accordion label + input[type='radio'] {
-    display: none;
-}
-
-/* hide content by default */
-.accordion .content {
-  max-height: 0;
-    overflow: hidden;
-    display: block;
-    transition: none;
-}
-
-.accordion label + input[type='radio']:checked + .content {
-    max-height: 500em;
-    padding:.5em;
-    overflow: visible;
-    transition: .7s max-height ease;
-}
 footer {
   text-align: center;
   background-color: #2E2E2F;
@@ -173,8 +135,11 @@ margin-left: 0px;
     text-decoration: underline;
   }
   footer ul a:hover {
-    text-decoration: underline;
+    color: #942B20;
   }
+footer ul a:focus {
+   text-decoration: underline;
+}
 
 
 /* link visited stles */
@@ -218,6 +183,8 @@ margin-left: 0px;
 .servicesschedulebutton a:hover {
   text-decoration: underline;
 }
+
+
 
 .scheduleappointment a:visited {
   color: #942B20;
@@ -364,15 +331,7 @@ text-decoration: none;
             main p {
               font-size: 100%;
             }
-              .promo {
-                display: flex;
-              }
-              .promocarousel {
-                width: 50%;
-              }
-              .googlemap {
-                width: 50%;
-                display: flex;}
+
                 .servicesbutton {
                   margin-right: 20px;
                   width: 30%;

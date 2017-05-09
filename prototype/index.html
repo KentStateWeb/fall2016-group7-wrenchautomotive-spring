@@ -10,43 +10,45 @@
   <body>
 
 <header>
-<div class="upperheader">
-  <img src="https://github.com/KentStateWeb/fall2016-group7-wrenchautomotive-spring/blob/master/images/wrench.jpg?raw=true" alt='Wrench's Auto Logo/>
 
-  <p> Located in Downtown Kent, Ohio </p>
-</div>
-
-
-<div class="menubutton">
-  <a href="#menu" class="menu-link">Menu</a>
-</div>
-
-<nav id="menu" role="navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="scheduleappointment.html">Schedule Appointment</a></li>
-                <li><a href="testimonials.html">About Us</a></li>
-            </ul>
-</nav>
-
-</header>
+<section class="smallscreennav">
+  <div class="upperheader">
+    <img src="https://github.com/KentStateWeb/fall2016-group7-wrenchautomotive-spring/blob/master/images/wrench.jpg?raw=true" alt='Wrench's Auto Logo/>
+  </div>
 
 
+  <a href="#menu" class="menu-link">
+      <div class="menu-link__hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+  </a>
+</section>
+
+
+  <nav id="menu" role="navigation">
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="scheduleappointment.html">Schedule Appointment</a></li>
+                  <li><a href="#">About Us</a></li>
+              </ul>
+  </nav>
+  </header>
 
 <main>
-  <div class="carousel js-flickity" data-flickity-options='{ "imagesLoaded":"true", "autoPlay": "true", "watchCSS":"true" }'
-           >
-    <div class="carousel-cell">
-              <img src="wrenchinhand.jpg">
+
+   <section class="hero-image">
+      <div class="hero-image__container"> <!-- If anyone has a more semantic way to do this, let me know -->
+          <div class="hero-image__text">
+              <h1>Welcome</h1>
+              <p>Providing quality service since 1994!</p>
+              <a href="scheduleappointment.html" class="button">Schedule your appointment today!</a>
+          </div>
       </div>
-    <div class="carousel-cell">
-              <img src="carmechanic.jpg">
-      </div>
-      <div class="carousel-cell">
-              <img src="mechanicshop.jpg">
-      </div>
-  </div>
+  </section>
+
 
 
 <h2>Welcome!</h2>
@@ -63,45 +65,36 @@
   <li>We use only top quality guaranteed parts.</li>
 </ul>
 
-
-<section class="homepagebuttons">
-  <div class="servicesbutton">
-    <h3> <a href="services.html"> Check out our services! </a> </h3>
-  </div>
-  <div class="schedulebutton">
-  <h3> <a href="scheduleappointment.html"> Schedule an Appointment!</a> </h3>
-  </div>
-</section>
+<a href="services.html" class="button"> Check out our services! </a>
+<a href="scheduleappointment.html" class="appointment"> Schedule Appointment! </a>
 
 
 
-
-<section class="promo">
-<div class="promocarousel">
-  <div class="carousel js-flickity" data-flickity-options='{ "imagesLoaded":"true", "autoPlay": "true", "watchCSS":"true" }'
-           >
-    <div class="carousel-cell">
-              <h2>The Walker “Converter Days!”</h2>
-              <p> Get a $50 VISA prepaid card with the purchase of a qualifying Walker Direct-Fit Catalytic Converter or a Walker Direct-Fit CalCat Catalytic Converter. The Walker “Converter Days!” offer is a mail-in offer. Restrictions apply. Offer may not be combined with any other discount, offer or rebate. Start: 9/1/2015 End: 10/31/2015 </p>
+<!-- This is the parent element.  It can be anything, not just section -->
+<section class="columna">
+        <!-- This is the "first" column.  It could be anything, not just div -->
+    <div class="column">
+      <div class="carousel js-flickity" data-flickity-options='{ "imagesLoaded":"true", "autoPlay": "true", "watchCSS":"true" }'
+               >
+        <div class="carousel-cell">
+                  <h2>The Walker “Converter Days!”</h2>
+                  <p> Get a $50 VISA prepaid card with the purchase of a qualifying Walker Direct-Fit Catalytic Converter or a Walker Direct-Fit CalCat Catalytic Converter. <br> <span class="expdate">Exp: 5/31/2017</span> </p>
+          </div>
+        <div class="carousel-cell">
+          <h2>Monroe “Shocktober”</h2>
+          <p> Buy 4 for the Price of 3 - Purchase a combination of (4) Qualifying Monroe or Rancho products and get a VISA prepaid card by Mail equal to the lowest cost unit, up to the current suggested list price. <br> <span class="expdate">Exp: 5/31/2017</span> </p>
+          </div>
       </div>
-    <div class="carousel-cell">
-      <h2>Monroe “Shocktober”</h2>
-      <p> Buy 4 for the Price of 3 - Purchase a combination of (4) Qualifying Monroe or Rancho products and get a VISA prepaid card by Mail equal to the lowest cost unit, up to the current suggested list price. The Monroe “Shocktober” offer is a mail-in offer. Restrictions apply. Offer may not be combined with any other discount, offer or rebate. Start: 9/1/2015 End: 10/31/2015 </p>
-      </div>
+    </div>
+    <!-- This is the "second" column.  It could be anything, not just div -->
+    <div class="column">
+      <div class="map">
+        <span class="googlehead"><h2> Pay us a visit! </h2></span>
+        <p> Please feel free to visit us at our convenient shop location. We have early bird and night owl drop off. Our shop also offers suttle services for when you are without a car. <br><span class="address">Wrench Automotive is located at: <br> 13468 E. Main Street - Kent, OH 44240.</span> </p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d96142.22905805917!2d-81.42143610758623!3d41.14664768420366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1493598108352" width="1000" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
   </div>
-</div>
-
-
-<div class="googlemap">
-  <div class="map">
-    <h2> Pay us a visit! </h2>
-    <p> Please feel free to visit us at our convenient shop location. We have early bird and night owl drop off. Our shop also offers suttle services for when you are without a car. Wrench Automotive is located at 13468 E. Main Street - Kent, OH 44240. </p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d96142.22905805917!2d-81.42143610758623!3d41.14664768420366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1493598108352" width="700" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-  </div>
-</div>
-
-</section>
-
+    </div>
+    <!-- This is the "third" column.  It could be anything, not just div -->
 
 </section>
 
@@ -112,43 +105,11 @@
 
 <footer>
 
+<a href="" class="call"> Call Us!   330-672-3031</a>
+        <a href="scheduleappointment.html" class="appointmentbutton">Schedule Appointment</a>
+      <a href="services.html" class="servicesbutton">Our Services</a>
 
-  <div class= "scheduleappointment">
-    <h2> <a href="scheduleappointment.html"> Schedule Appointment </a> </h2>
-  </div>
-
-
-  <div class="footernav">
-
-
-    <ul>
-    <li> <a href="services.html"> Oil & Oil Filter Service </a> </li>
-     <li> <a href="services.html"> Cooling System Services </a> </li>
-     <li> <a href="services.html"> Driveline Service </a> </li>
-     <li> <a href="services.html"> Fuel/Air Induction Clean-Up </a> </li>
-     <li> <a href="services.html"> Power Steering Flush </a> </li>
-     <li> <a href="services.html"> Transmission Service </a> </li>
-     <li> <a href="services.html"> Brake System Services </a> </li>
-     <li> <a href="services.html"> Tire Service </a> </li>
-   </ul>
-
-
-<div class="contactinfo">
-  <p> Wrench Automotive is conveniently located in Kent, Ohio, just off of State Route 43.<br>
-  <p>13468 E. Main Street <br> Kent, OH 44240</p>
-  <p>330-672-3031 </p>
- <p>Monday - Friday <br>  8:00-5:00</p>
-</div>
-
-  </div>
-
-
-
-
-
-
-
-
+<span class="copyright"><p>© 2017 Wrench Automotive. All Rights Reserved. </p> </span>
 
 
 </footer>
@@ -156,9 +117,9 @@
 
        <!-- The page content goes here -->
 
-      <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+      <link href="stylea.css" rel="stylesheet" type="text/css" media="screen" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-      <script src="navigation.js"></script>
+      <script src="jquerya.js"></script>
       <script src="https://npmcdn.com/flickity@1.2/dist/flickity.pkgd.min.js"></script><link rel="stylesheet" href="https://npmcdn.com/flickity@1.2/dist/flickity.min.css">
 
 

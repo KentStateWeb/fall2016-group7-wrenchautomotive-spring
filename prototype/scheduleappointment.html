@@ -10,81 +10,227 @@
   <body>
 
     <header>
-    <div class="upperheader">
-      <img src="https://github.com/KentStateWeb/fall2016-group7-wrenchautomotive-spring/blob/master/images/wrench.jpg?raw=true" alt='Wrench's Auto Logo/>
 
-      <p> Located in Downtown Kent, Ohio </p>
-    </div>
+    <section class="smallscreennav">
+      <div class="upperheader">
+        <img src="https://github.com/KentStateWeb/fall2016-group7-wrenchautomotive-spring/blob/master/images/wrench.jpg?raw=true" alt='Wrench's Auto Logo/>
+      </div>
 
 
-    <div class="menubutton">
-      <a href="#menu" class="menu-link">Menu</a>
-    </div>
+      <a href="#menu" class="menu-link">
+          <div class="menu-link__hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+      </a>
+    </section>
 
-    <nav id="menu" role="navigation">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="scheduleappointment.html">Schedule Appointment</a></li>
-                    <li><a href="testimonials.html">About Us</a></li>
-                </ul>
-    </nav>
 
-    </header>
+      <nav id="menu" role="navigation">
+                  <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="services.html">Services</a></li>
+                      <li><a href="scheduleappointment.html">Schedule Appointment</a></li>
+                      <li><a href="#">About Us</a></li>
+                  </ul>
+      </nav>
+      </header>
 
 
 <main>
 
-<h1>Schedule your appointment today!</h1>
+<h2>Schedule your appointment today!</h2>
 <p>To request an appointment online, simply fill in the form below and explain which services you would like for us to perform on your vehicle in the comments section. One of our staff will contact you as soon as possible to confirm your appointment. Thank you!</p>
-<ol>
-  <li>Tell us about your car</li>
-  <li>When do you want to come in?</li>
-  <li>What's the best way to contact you?</li>
-</ol>
-<h2>Year</h2>
-<div style="width:400px;height:30px;border:1px solid #000;"> </div>
-<h2>Make</h2>
-<div style="width:400px;height:30px;border:1px solid #000;"> </div>
-<h2>Model</h2>
-<div style="width:400px;height:30px;border:1px solid #000;"> </div>
-<h2>Services Needed</h2>
-<div style="width:400px;height:100px;border:1px solid #000;"> </div>
-<!-- next button-->
+
+<span class="credit"><p> We accept all major credit cards, cash and personal checks.</p></span>
+
+<div class="js-tab-widget">
+    <h1 class="base--h1"></h1>
+    <ul class="tab-list">
+      <li class="tab-item">
+        <a class="tab-link" href="#tab-1">1. Tell us about your car</a>
+      </li>
+      <li class="tab-item">
+        <a class="tab-link" href="#tab-2">2. When do you want to come in?</a>
+      </li>
+      <li class="tab-item">
+        <a class="tab-link" href="#tab-3">3. What is the best way to contact you?</a>
+      </li>
+    </ul>
+    <section id="tab-1" class="tab-panel">
 
 
-<div class="map">
+            <hr>
+          <span class="scheduleheader"><h3>Year *</h3></span>
+            <select id="soflow">
+              <option value="2017">2017</option>
+              <option value="2016">2016</option>
+              <option value="2015">2015</option>
+              <option value="2014">2014</option>
+              <option value="2013">2013</option>
+              <option value="2012">2012</option>
+              <option value="2011">2011</option>
+              <option value="2010">2010</option>
+              <option value="2009">2009</option>
+              <option value="2008">2008</option>
+              <option value="2007">2007</option>
+              <option value="2006">2006</option>
+              <option value="2005">2005</option>
+              <option value="2004">2004</option>
+              <option value="2003">2003</option>
+              <option value="2002">2002</option>
+              <option value="2001">2001</option>
+              <option value="2000">2000</option>
+            </select>
+          </hr>
 
-  <p> Need directions to our convienat location in downtown Kent? Wrench Automotive is located at 13468 E. Main Street - Kent, OH 44240. </p>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d96142.22905805917!2d-81.42143610758623!3d41.14664768420366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1493598108352" width="700" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <hr>
+          <span class="scheduleheader"><h3>Make *</h3> </span>
+            <select id="soflow">
+              <option value="Ford">Ford</option>
+              <option value="Chrysler">Chrysler</option>
+              <option value="General Motors">General Motors</option>
+              <option value="Chevrolet">Chevrolet</option>
+              <option value="Dodge">Dodge</option>
+              <option value="Hyundai">Hyundai</option>
+              <option value="Honda">Honda</option>
+              <option value="Mitsubishi">Mitsubishi</option>
+              <option value="Nissan">Nissan</option>
+              <option value="Pontiac">Pontiac</option>
+              <option value="Saturn">Saturn</option>
+              <option value="Saab">Saab</option>
+              <option value="Porsche">Porsche</option>
+              <option value="Fiat">Fiat</option>
+              <option value="BMW">BMW</option>
+              <option value="Volkswagen">Volkswagen</option>
+            </select>
+          </hr>
+
+
+
+            <span class="scheduleheader"> <h3>Model *</h3></span>
+            <textarea name="model" rows="4" cols="60">Enter the model of your car.</textarea>
+
+            <h3>Services Needed</h3>
+            <input type="checkbox" name="service" value="OilChange" checked="checked"> Oil Change <br>
+            <input type="checkbox" name="service" value="TireRotation" checked="checked"> Tire Rotation <br>
+            <input type="checkbox" name="service" value="StateInspection" checked="checked"> State Inspection <br>
+            <input type="checkbox" name="service" value="Other" checked="checked"> Other <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+    <section id="tab-2" class="tab-panel">
+  <h3>Requested Date *</h3>
+      <select id="soflow">
+        <option value="time">Monday, May 8, 2017</option>
+        <option value="time">Tuesday, May 9, 2017</option>
+        <option value="time">Wednesday, May 10, 2017</option>
+        <option value="time">Thursday, May 11, 2017</option>
+        <option value="time">Friday, May 12, 2017</option>
+      </select>
+
+      <h3>Preferred Time*</h3>
+      <select id="soflow">
+        <option value="time">9:00 a.m.</option>
+        <option value="time">9:30 a.m.</option>
+        <option value="time">10:00 a.m.</option>
+        <option value="time">10:30 a.m.</option>
+        <option value="time">11:00 a.m.</option>
+      </select>
+
+      <h3>Do you plan to wait on your vehicle?</h3>
+      <input type="checkbox" name="service" value="yes" checked="checked"> Yes <br>
+      <input type="checkbox" name="service" value="no" checked="checked"> No <br>
+
+      <h3>Hours of Operation</h3>
+      <p>Monday - Friday <br>  8:00-5:00</p>
+
+    </section>
+    <section id="tab-3" class="tab-panel">
+
+      <span class="scheduleheader"> <h3>Name *</h3></span>
+      <textarea name="model" rows="2" cols="60"> </textarea>
+
+      <span class="scheduleheader"> <h3>Email *</h3></span>
+      <textarea name="model" rows="2" cols="60"> </textarea>
+
+      <span class="scheduleheader"> <h3>Phone *</h3></span>
+      <textarea name="model" rows="2" cols="60"> </textarea>
+
+      <h3>How should we contact you?</h3>
+      <input type="checkbox" name="service" value="phone" checked="checked"> Phone <br>
+      <input type="checkbox" name="service" value="email" checked="checked"> Email <br>
+
+      <h3>First time to Wrench Automotive?</h3>
+      <input type="checkbox" name="service" value="yes" checked="checked"> Yes <br>
+      <input type="checkbox" name="service" value="no" checked="checked"> No <br>
+
+      <a href="#" class="button">Submit</a> <br>
+
+    </section>
+  </div>
+<div class="testimonials">
+  <div class="carousel js-flickity" data-flickity-options='{ "imagesLoaded":"true", "autoPlay": "true", "watchCSS":"true" }'
+           >
+    <div class="carousel-cell">
+              <blockquote class="quote">
+                The best in town!I stand by Wrench In all they do. They get the job done and done right without taking out a second loan on your home! Fast service and always with a smile! Love Wrench I have been a client for years and will remain a client for years to come! <br><span class="customer">- James S.</span>
+              </blockquote>
+
+      </div>
+    <div class="carousel-cell">
+      <blockquote class="quote">
+        I recently had the team at Wrench Auto perform an engine replacement on my 1973 Corvette...not a minor repair to say the least. Todd, Brian, and the entire team were extremely professional, a pleasure to work with, and they did a fantastic job installing the new Jasper high performance engine. I would highly recommend Wrench Auto to anyone. <br><span class="customer">- Sean J.</span>
+      </blockquote>
+
+      </div>
+      <div class="carousel-cell">
+        <blockquote class="quote">
+          Great service! I had my car at two other shops and it still had a check engine light. <br>Todd and Brian fixed it fast and inexpensive. Thanks! <br><span class="customer">- Joan W.</span>
+        </blockquote>
+
+      </div>
+  </div>
 </div>
 
-<h3>We accept all major credit cards, cash and personal checks.</h3>
 
-<h2>Hours of Operations</h2>
-<p>Weekdays: 8:00-5:00 <br> Weekends: Closed</p>
 
 </main>
 
+</body>
+
 <footer>
-  <ul>
-    <li> <a href="index.html"> Home </a> </li>
-    <li> <a href="services.html"> Services </a> </li>
-    <li> <a href="scheduleappointment.html"> Schedule Appointment  </a> </li>
-    <li> Promos </li>
-    <li> <a href="testimonials.html"> About Us </a> </li>
-  </ul>
+
+
+  <a href="" class="call"> Call Us!   330-672-3031</a>
+          <a href="scheduleappointment.html" class="appointmentbutton">Schedule Appointment</a>
+        <a href="services.html" class="servicesbutton">Our Services</a>
+
+  <span class="copyright"><p>© 2017 Wrench Automotive. All Rights Reserved. </p> </span>
 
 
 </footer>
 
 
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 
-  </body>
-
-  <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-  <script src="navigation.js"></script>
-  <script src="https://npmcdn.com/flickity@1.2/dist/flickity.pkgd.min.js"></script><link rel="stylesheet" href="https://npmcdn.com/flickity@1.2/dist/flickity.min.css">
+      <link href="stylea.css" rel="stylesheet" type="text/css" media="screen" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+      <script src="jquerya.js"></script>
+      <script src="https://npmcdn.com/flickity@1.2/dist/flickity.pkgd.min.js"></script><link rel="stylesheet" href="https://npmcdn.com/flickity@1.2/dist/flickity.min.css">
 
 </html>
