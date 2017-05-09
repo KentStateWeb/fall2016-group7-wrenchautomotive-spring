@@ -1,0 +1,34 @@
+
+body {
+  text-align: center;
+}
+h1, h2 {
+  font-family: 'Arvo', serif;
+  color: #942B20;
+  margin-bottom: 0px;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+ul, p {
+  font-family: 'Open Sans', sans-serif;
+}
+a {
+  list-style: none;
+  text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+a:visited {
+  color: #942B20;
+}
+a:link {
+  text-decoration: none;
+}
+a:active {
+  color: #BF8079;
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: underline;
+}
