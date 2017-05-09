@@ -632,7 +632,7 @@ nav[role=navigation] {
             border-bottom: 1px solid #808080;
       }
 
-@media screen and (min-width:400px) {
+@media screen and (min-width:500px) {
             .service__text h1 {
               margin-top: 30px;
               font-size: 300%
